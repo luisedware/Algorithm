@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main()
+int main(int argc, char *argv[])
 {
-	int a[100],i,j,n,t;
+	int a[100], i, j, n, t;
 	
 	// 输入一个数 n，表示接下来有 n 个数。
 	printf("请输入排序数字的个数\n");
@@ -27,6 +27,7 @@ int main()
 		}
 	}
 
+	// 循环输出冒泡排序结果
 	printf("冒泡排序结果为：\n[");
 	for(i = 1; i <= n; i++){
 		if (i == n){
