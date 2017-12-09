@@ -27,12 +27,12 @@ int main()
 		}
 	}
 
-	printf("[");
+	printf("冒泡排序结果为：\n[");
 	for(i = 1; i <= n; i++){
 		if (i == n){
 			printf("%d]", a[i]);
 		}else{
-			printf("%d,", a[i]);			
+			printf("%d, ", a[i]);			
 		}
 	}
 
