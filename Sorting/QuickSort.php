@@ -2,7 +2,10 @@
 
 $array = [6, 1, 2, 7, 9, 3, 4, 5, 10, 8];
 
-function quick_sort(int $left, int $right, array &$array) : void {
+function quick_sort(array &$array, $left = null, $right = null) : void {
+    $left = $left === null ? 0 :$left;
+    $right = $right === null ? count($array) - 1 : $right;
+    
     if($left > $right){
         return ;
     }
@@ -30,14 +33,14 @@ function quick_sort(int $left, int $right, array &$array) : void {
     $array[$left] = $array[$i];
     $array[$i] = $temp;
     
-    quick_sort($left, $i - 1, $array);
-    quick_sort($i + 1, $right, $array);
+    quick_sort($array, $left, $i - 1);
+    quick_sort($array, $i + 1, $right);
     
     return ;
 }    
 
 
-quick_sort(0, count($array) - 1, $array);
+quick_sort($array);
 
 echo "[".implode(', ', $array)."]";
 ?>
