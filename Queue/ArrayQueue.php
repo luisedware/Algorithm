@@ -3,16 +3,6 @@
 declare(strict_types=1);
 error_reporting(E_ALL);
 
-// PHP 原生函数简单实现
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-// 入队
-array_push($array, 10);
-
-// 出队
-array_shift($array);
-var_dump(implode(',', $array));
-
 // 队列基础元素
 abstract class Queue
 {
@@ -79,20 +69,20 @@ class ArrayQueue extends Queue implements QueueHandle
 }
 
 $arrayQueue = new ArrayQueue(5);
+
 $arrayQueue->enqueue('Google');
 $arrayQueue->enqueue('AliCloud');
 $arrayQueue->enqueue('HuaWei');
 $arrayQueue->enqueue('WeChat');
 $arrayQueue->enqueue('Facebook');
-$arrayQueue->dequeue();
-$arrayQueue->dequeue();
-$arrayQueue->enqueue('Apple');
-$arrayQueue->enqueue('Hello');
-$arrayQueue->enqueue('World');
+$arrayQueue->enqueue('China');
 echo $arrayQueue;
 
-// 使用 SPL 实现队列
-$splQueue = new SplQueue();
-$splQueue->enqueue('Hello');
-$splQueue->enqueue('World');
-print_r($splQueue);
+$arrayQueue->dequeue();
+$arrayQueue->dequeue();
+$arrayQueue->dequeue();
+$arrayQueue->dequeue();
+$arrayQueue->dequeue();
+$arrayQueue->dequeue();
+echo $arrayQueue;
+
