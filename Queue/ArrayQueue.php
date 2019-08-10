@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 // 队列基础元素
 abstract class Queue
 {
-    public $array;
+    public $items;
     public $count;
     public $head = 0;
     public $tail = 0;
@@ -28,7 +28,7 @@ class ArrayQueue extends Queue implements QueueHandle
     public function __construct(int $count)
     {
         // 申请一个长度为 $count 的数组
-        $this->array = array_fill(0, $count, null);
+        $this->items = array_fill(0, $count, null);
         $this->count = $count;
     }
 
@@ -41,10 +41,10 @@ class ArrayQueue extends Queue implements QueueHandle
             return false;
         }
 
-        $this->array[$this->tail] = $item;
+        $this->items[$this->tail] = $item;
         $this->tail++;
 
-        return $this->array;
+        return $this->items;
     }
 
     public function dequeue()
@@ -56,15 +56,15 @@ class ArrayQueue extends Queue implements QueueHandle
             return false;
         }
 
-        unset($this->array[$this->head]);
+        unset($this->items[$this->head]);
         $this->head++;
 
-        return $this->array;
+        return $this->items;
     }
 
     public function __toString()
     {
-        return ('['.implode(',', $this->array).']').PHP_EOL;
+        return ('['.implode(',', $this->items).']').PHP_EOL;
     }
 }
 
