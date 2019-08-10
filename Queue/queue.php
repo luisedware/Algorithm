@@ -89,5 +89,10 @@ $arrayQueue->dequeue();
 $arrayQueue->enqueue('Apple');
 $arrayQueue->enqueue('Hello');
 $arrayQueue->enqueue('World');
-
 echo $arrayQueue;
+
+// 使用 SPL 实现队列
+$splQueue = new SplQueue();
+$splQueue->enqueue('Hello');
+$splQueue->enqueue('World');
+print_r($splQueue);
