@@ -1,0 +1,15 @@
+{
+    "name": "sebastiankennedy/algorithm",
+    "authors": [
+        {
+            "name": "sebastian",
+            "email": "sebastiankennedy@foxmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "LinkedList\\": "LinkedList/"
+        }
+    }
+}
