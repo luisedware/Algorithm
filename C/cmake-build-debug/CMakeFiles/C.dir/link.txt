@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/C.dir/Sorting/BubbleSort.c.o CMakeFiles/C.dir/Sorting/QuickSort.c.o CMakeFiles/C.dir/LinkedList/SingleLinkedListNode.c.o CMakeFiles/C.dir/LinkedList/ArrayLinkedList.c.o  -o C 

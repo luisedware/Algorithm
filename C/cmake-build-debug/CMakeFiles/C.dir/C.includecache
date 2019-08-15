@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sebastian/Code/Github/algorithm/C/LinkedList/SingleLinkedListNode.c
+SingleLinkedListNode.h
+/Users/sebastian/Code/Github/algorithm/C/LinkedList/SingleLinkedListNode.h
+
+/Users/sebastian/Code/Github/algorithm/C/LinkedList/SingleLinkedListNode.h
+
+/Users/sebastian/Code/Github/algorithm/C/Sorting/BubbleSort.c
+stdio.h
+-
+
+/Users/sebastian/Code/Github/algorithm/C/Sorting/QuickSort.c
+stdio.h
+-
+
