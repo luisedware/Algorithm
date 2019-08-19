@@ -3,4 +3,4 @@ project(C C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(ArrayLinedList.c LinkedList/ArrayLinkedList.c)
+add_executable(LinkedList LinkedList/LinkedList.c)

@@ -65,39 +65,39 @@ CMAKE_SOURCE_DIR = /Users/sebastian/Code/Github/algorithm/C
 CMAKE_BINARY_DIR = /Users/sebastian/Code/Github/algorithm/C/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/ArrayLinedList.c.dir
+# Target rules for target CMakeFiles/LinkedList.dir
 
 # All Build rule for target.
-CMakeFiles/ArrayLinedList.c.dir/all:
-	$(MAKE) -f CMakeFiles/ArrayLinedList.c.dir/build.make CMakeFiles/ArrayLinedList.c.dir/depend
-	$(MAKE) -f CMakeFiles/ArrayLinedList.c.dir/build.make CMakeFiles/ArrayLinedList.c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/sebastian/Code/Github/algorithm/C/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ArrayLinedList.c"
-.PHONY : CMakeFiles/ArrayLinedList.c.dir/all
+CMakeFiles/LinkedList.dir/all:
+	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/depend
+	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/sebastian/Code/Github/algorithm/C/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target LinkedList"
+.PHONY : CMakeFiles/LinkedList.dir/all
 
 # Include target in all.
-all: CMakeFiles/ArrayLinedList.c.dir/all
+all: CMakeFiles/LinkedList.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ArrayLinedList.c.dir/rule: cmake_check_build_system
+CMakeFiles/LinkedList.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastian/Code/Github/algorithm/C/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ArrayLinedList.c.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LinkedList.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastian/Code/Github/algorithm/C/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ArrayLinedList.c.dir/rule
+.PHONY : CMakeFiles/LinkedList.dir/rule
 
 # Convenience name for target.
-ArrayLinedList.c: CMakeFiles/ArrayLinedList.c.dir/rule
+LinkedList: CMakeFiles/LinkedList.dir/rule
 
-.PHONY : ArrayLinedList.c
-
-# clean rule for target.
-CMakeFiles/ArrayLinedList.c.dir/clean:
-	$(MAKE) -f CMakeFiles/ArrayLinedList.c.dir/build.make CMakeFiles/ArrayLinedList.c.dir/clean
-.PHONY : CMakeFiles/ArrayLinedList.c.dir/clean
+.PHONY : LinkedList
 
 # clean rule for target.
-clean: CMakeFiles/ArrayLinedList.c.dir/clean
+CMakeFiles/LinkedList.dir/clean:
+	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/clean
+.PHONY : CMakeFiles/LinkedList.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/LinkedList.dir/clean
 
 .PHONY : clean
 

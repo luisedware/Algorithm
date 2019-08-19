@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ArrayLinedList.c
+# Target rules for targets named LinkedList
 
 # Build rule for target.
-ArrayLinedList.c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ArrayLinedList.c
-.PHONY : ArrayLinedList.c
+LinkedList: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LinkedList
+.PHONY : LinkedList
 
 # fast build rule for target.
-ArrayLinedList.c/fast:
-	$(MAKE) -f CMakeFiles/ArrayLinedList.c.dir/build.make CMakeFiles/ArrayLinedList.c.dir/build
-.PHONY : ArrayLinedList.c/fast
+LinkedList/fast:
+	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/build
+.PHONY : LinkedList/fast
 
-LinkedList/ArrayLinkedList.o: LinkedList/ArrayLinkedList.c.o
+LinkedList/LinkedList.o: LinkedList/LinkedList.c.o
 
-.PHONY : LinkedList/ArrayLinkedList.o
+.PHONY : LinkedList/LinkedList.o
 
 # target to build an object file
-LinkedList/ArrayLinkedList.c.o:
-	$(MAKE) -f CMakeFiles/ArrayLinedList.c.dir/build.make CMakeFiles/ArrayLinedList.c.dir/LinkedList/ArrayLinkedList.c.o
-.PHONY : LinkedList/ArrayLinkedList.c.o
+LinkedList/LinkedList.c.o:
+	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList/LinkedList.c.o
+.PHONY : LinkedList/LinkedList.c.o
 
-LinkedList/ArrayLinkedList.i: LinkedList/ArrayLinkedList.c.i
+LinkedList/LinkedList.i: LinkedList/LinkedList.c.i
 
-.PHONY : LinkedList/ArrayLinkedList.i
+.PHONY : LinkedList/LinkedList.i
 
 # target to preprocess a source file
-LinkedList/ArrayLinkedList.c.i:
-	$(MAKE) -f CMakeFiles/ArrayLinedList.c.dir/build.make CMakeFiles/ArrayLinedList.c.dir/LinkedList/ArrayLinkedList.c.i
-.PHONY : LinkedList/ArrayLinkedList.c.i
+LinkedList/LinkedList.c.i:
+	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList/LinkedList.c.i
+.PHONY : LinkedList/LinkedList.c.i
 
-LinkedList/ArrayLinkedList.s: LinkedList/ArrayLinkedList.c.s
+LinkedList/LinkedList.s: LinkedList/LinkedList.c.s
 
-.PHONY : LinkedList/ArrayLinkedList.s
+.PHONY : LinkedList/LinkedList.s
 
 # target to generate assembly for a file
-LinkedList/ArrayLinkedList.c.s:
-	$(MAKE) -f CMakeFiles/ArrayLinedList.c.dir/build.make CMakeFiles/ArrayLinedList.c.dir/LinkedList/ArrayLinkedList.c.s
-.PHONY : LinkedList/ArrayLinkedList.c.s
+LinkedList/LinkedList.c.s:
+	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList/LinkedList.c.s
+.PHONY : LinkedList/LinkedList.c.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ArrayLinedList.c"
-	@echo "... LinkedList/ArrayLinkedList.o"
-	@echo "... LinkedList/ArrayLinkedList.i"
-	@echo "... LinkedList/ArrayLinkedList.s"
+	@echo "... LinkedList"
+	@echo "... LinkedList/LinkedList.o"
+	@echo "... LinkedList/LinkedList.i"
+	@echo "... LinkedList/LinkedList.s"
 .PHONY : help
 
 
