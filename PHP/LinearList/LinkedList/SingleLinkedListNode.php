@@ -1,10 +1,13 @@
 <?php
 
 namespace LinearList\LinkedList;
+
 /**
  * 单向链表节点
  *
- * Class SimpleLinkedListNode
+ * Class SingleLinkedListNode
+ *
+ * @package LinearList\LinkedList
  */
 class SingleLinkedListNode
 {
