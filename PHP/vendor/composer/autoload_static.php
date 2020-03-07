@@ -9,14 +9,14 @@ class ComposerStaticInitf07b996a96de18d2bd0da83fc945037d
     public static $prefixLengthsPsr4 = array (
         'L' => 
         array (
-            'LinkedList\\' => 11,
+            'LinearList\\' => 11,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'LinkedList\\' => 
+        'LinearList\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/LinkedList',
+            0 => __DIR__ . '/../..' . '/LinearList',
         ),
     );
 

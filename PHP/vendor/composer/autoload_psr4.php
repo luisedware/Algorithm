@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'LinkedList\\' => array($baseDir . '/LinkedList'),
+    'LinearList\\' => array($baseDir . '/LinearList'),
 );

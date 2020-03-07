@@ -1,6 +1,6 @@
 <?php
 
-namespace App\LinkedList;
+namespace LinearList\LinkedList;
 
 class SingleLinkedList
 {

@@ -9,7 +9,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "List\\LinkedList\\": "List/LinkedList/"
+            "LinearList\\": "LinearList/"
         }
     }
 }
