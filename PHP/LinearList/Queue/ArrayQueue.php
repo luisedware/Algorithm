@@ -12,16 +12,6 @@ abstract class Queue
     public array $items;
 }
 
-// 队列基本操作
-interface QueueHandle
-{
-    // 入队
-    public function enqueue($item);
-
-    // 出队
-    public function dequeue();
-}
-
 // 数组队列
 class ArrayQueue extends Queue implements QueueHandle
 {
@@ -67,22 +57,4 @@ class ArrayQueue extends Queue implements QueueHandle
         return ('['.implode(',', $this->items).']').PHP_EOL;
     }
 }
-
-$arrayQueue = new ArrayQueue(5);
-
-$arrayQueue->enqueue('Google');
-$arrayQueue->enqueue('AliCloud');
-$arrayQueue->enqueue('HuaWei');
-$arrayQueue->enqueue('WeChat');
-$arrayQueue->enqueue('Facebook');
-$arrayQueue->enqueue('China');
-echo $arrayQueue;
-
-$arrayQueue->dequeue();
-$arrayQueue->dequeue();
-$arrayQueue->dequeue();
-$arrayQueue->dequeue();
-$arrayQueue->dequeue();
-$arrayQueue->dequeue();
-echo $arrayQueue;
 

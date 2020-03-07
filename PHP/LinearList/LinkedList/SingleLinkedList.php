@@ -1,18 +1,18 @@
 <?php
 
-namespace LinkedList;
+namespace App\LinkedList;
 
 class SingleLinkedList
 {
-    public $head;
-    public $length;
+    public ?SingleLinkedListNode $head;
+    public int $length;
 
     public function __construct($head = null)
     {
         if (null === $head) {
             $this->head = new SingleLinkedListNode();
         } else {
-            if (! $head instanceof SingleLinkedListNode) {
+            if (!$head instanceof SingleLinkedListNode) {
                 return false;
             }
 

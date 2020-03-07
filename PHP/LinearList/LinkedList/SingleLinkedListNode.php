@@ -1,7 +1,5 @@
 <?php
 
-namespace LinkedList;
-
 /**
  * 单向链表节点
  *
