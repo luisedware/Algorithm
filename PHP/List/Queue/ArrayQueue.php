@@ -6,10 +6,10 @@ error_reporting(E_ALL);
 // 队列基础元素
 abstract class Queue
 {
-    public $items;
-    public $count;
-    public $head = 0;
-    public $tail = 0;
+    public int $count;
+    public int $head = 0;
+    public int $tail = 0;
+    public array $items;
 }
 
 // 队列基本操作
