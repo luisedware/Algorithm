@@ -1,26 +1,8 @@
 <?php
 
-declare(strict_types=1);
-error_reporting(E_ALL);
+namespace LinearList\Stack;
 
-abstract class Stack
-{
-    // 元素
-    public $items;
-    // 栈中元素个数
-    public $count;
-    // 栈的大小
-    public $length;
-}
-
-interface StackHandle
-{
-    // 入栈
-    public function push($item);
-
-    // 出栈
-    public function pop();
-}
+use SplFixedArray;
 
 class ArrayStack extends Stack implements StackHandle
 {
@@ -60,12 +42,3 @@ class ArrayStack extends Stack implements StackHandle
         return true;
     }
 }
-
-$arrayStack = new ArrayStack(5);
-$arrayStack->push('first');
-$arrayStack->push('second');
-$arrayStack->push('third');
-print_r($arrayStack);
-
-$arrayStack->pop();
-print_r($arrayStack);
