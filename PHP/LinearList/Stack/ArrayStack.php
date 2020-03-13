@@ -41,4 +41,19 @@ class ArrayStack extends Stack implements StackHandle
 
         return true;
     }
+
+    public function peek()
+    {
+        return $this->items[$this->count - 1];
+    }
+
+    public function count()
+    {
+        return $this->count;
+    }
+
+    public function length()
+    {
+        return $this->length;
+    }
 }
