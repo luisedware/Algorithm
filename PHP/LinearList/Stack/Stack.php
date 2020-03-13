@@ -2,12 +2,14 @@
 
 namespace LinearList\Stack;
 
+use SplFixedArray;
+
 abstract class Stack
 {
     // 元素
-    public $items;
-    // 栈中元素个数
-    public $count;
+    protected SplFixedArray $items;
+    // 栈中元素数量
+    protected int $count;
     // 栈的大小
-    public $length;
+    protected int $length;
 }
